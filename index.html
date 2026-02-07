@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atm">
+    <h2>ATM System</h2>
+
+    <input type="password" id="pin" placeholder="Enter PIN">
+    <button onclick="login()">Login</button>
+
+    <div id="menu" style="display:none;">
+        <button onclick="checkBalance()">Check Balance</button>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <p id="output"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
